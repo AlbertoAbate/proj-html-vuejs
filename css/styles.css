@@ -132,6 +132,7 @@ header {
 .second-section {
     text-align: center;
     margin-bottom: 100px;
+    position: relative;
 }
 .range .logo-small {
     /* margin-top: 40px; */
@@ -177,7 +178,27 @@ header {
 .vimeo {
     margin-left: 50px;
 }
+.second-section::after{
+    content: '';
+    position: absolute;
+    top: 708px;
+    width: 60%;
+    height: 75px;
+    background-color: #fff;
+    left: -97px;
+    transform: rotate(6deg);
+}
 /* third-section */
+.third-section::before {
+    content: "";
+    position: absolute;
+    bottom: -248%;
+    right: 0%;
+    width: 50%;
+    height: 125px;
+    background-color: #fff;
+    transform: rotate(174deg);
+}
 .third-section {
     line-height: 30px;
     padding: 150px 0 100px 0;
