@@ -12,6 +12,9 @@ body {
 .flex {
     display: flex;
 }
+.white {
+    color: #fff;
+}
 
 .container-small {
     width: 1170px;
@@ -24,7 +27,6 @@ header {
 .header-top {
     justify-content: space-between;
     font-size: 10px;
-    color: #fff;
 }
 .contact ul li,
 .social ul li {
@@ -63,4 +65,92 @@ header {
 }
 .link ul li a:hover {
     color:  #ffab0b;
+}
+
+/* main */
+.first-section {
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 100%;
+    background-image: url(../img/home_main_slider_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.first-section h1 {
+    font-size: 50px;
+}
+.first-section h3 {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 15px;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    
+}
+.buttons .find {
+    margin-right: 10px;
+    background-color: #ffab0b;
+    border-color: #ffab0b;
+}
+.buttons .apply {
+    background-color: #0ebcf2;
+    border-color: #0ebcf2;
+}
+.buttons .find,
+.buttons .apply {
+    padding: 5px 20px;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+/* second-section */
+.second-section {
+    text-align: center;
+}
+.range .logo-small {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.range {
+    margin-bottom: 100px;
+}
+.range h2 {
+    margin-bottom: 15px;
+}
+.range p {
+    font-size: 16px;
+    color: #7b7e85;
+}
+.second-section-bottom {
+    position: relative;
+    max-width: 80%;
+}
+.second-section-bottom:before {
+    content: '';
+    position: absolute;
+    width: 180px;
+    height: 2px;
+    background-color: #ffab0b;
+    left: 500px;
+    top: -70px;
+}
+.why {
+    text-align: left;
+}
+.why h3 {
+    text-transform: uppercase;
+}
+.why p {
+    max-width: 100%;
+    margin-top: 20px;
+    line-height: 30px;
+    color: #7b7e85;
+    font-size: 14px;
+}
+.vimeo {
+    margin-left: 50px;
 }
