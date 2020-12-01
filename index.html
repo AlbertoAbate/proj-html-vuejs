@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML/VueJS classe 19</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/styles.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
@@ -278,7 +280,7 @@
                 </li>
                 <li>
                     <i class="far fa-envelope"></i>
-                    <span class="mll">info@your-domain.com</span>
+                    <span class="mll dark">info@your-domain.com</span>
                 </li>
                 <li>
                     <i class="far fa-clock"></i>
@@ -318,7 +320,7 @@
                     <h4 class="tu">Courses</h4>
                     <ul>
                         <li v-For="(course, i) in coursesList">
-                            <a href="#">{{ course.item }}</a>
+                            <a class="dark" href="#">{{ course.item }}</a>
                         </li>
                     </ul>
                 </div>
@@ -326,7 +328,7 @@
                     <h4 class="tu">Admissions</h4>
                     <ul>
                         <li v-For="(admission, i) in admissionsList">
-                            <a href="#">{{ admission.item }}</a>
+                            <a class="dark" href="#">{{ admission.item }}</a>
                         </li>
                     </ul>
                 </div>  
@@ -336,7 +338,7 @@
                     <h4 class="tu">Resources</h4>
                     <ul>
                         <li v-For="(resource, i) in resourcesList">
-                            <a href="#">{{ resource.item }}</a>
+                            <a class="dark" href="#">{{ resource.item }}</a>
                         </li>
                     </ul>
                 </div>
@@ -344,14 +346,33 @@
                     <h4 class="tu">Quicklinks</h4>
                     <ul>
                         <li v-For="(quicklink, i) in quicklinksList">
-                            <a href="#">{{ quicklink.item }}</a>
+                            <a class="dark" href="#">{{ quicklink.item }}</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div>
-
+        <div class="events">
+            <h4 class="tu">Upcoming Events</h4>
+            <div class="upcoming flex mb">
+                <i class="far fa-calendar-alt mr fs orange"></i>
+                <div>
+                    <h4>Business Seminar</h4>
+                    <span>July 1, 2019@8:00 am- July 1,2021@5:00pm</span>
+                    <div>United States</div>
+                </div>
+            </div>
+            <div>
+                <div class="politics flex">
+                    <i class="far fa-calendar-alt mr fs orange"></i>
+                    <div>
+                        <h4>Politics Seminar</h4>
+                        <span>July 1, 2019@8:00 am- July 1,2021@5:00pm</span>
+                        <div>United Kingdom</div>
+                    </div>
+                </div>
+            </div>
+            <p class="mt">View more...</p>
         </div>
     </footer>
   </div> <!-- chiusura app -->

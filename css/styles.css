@@ -6,7 +6,7 @@
 }
 body {
     max-width: 100%;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
 }
 /* Utilities */
@@ -42,6 +42,12 @@ body {
 }
 .mll {
     margin-left: 20px;
+}
+.fs {
+    font-size: 50px;
+}
+.dark {
+    color:  #130f09;
 }
 
 .container-small {
@@ -390,10 +396,11 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: -100px;
+    border-bottom: 1px solid  #e6e6e6;
     
 }
 footer h4 {
-    color:  #444b5b;
+    color:  #2e3341;
     line-height: 30px;
 }
 footer span,
@@ -414,7 +421,9 @@ footer ul li {
     flex-direction: column;
 }
 /* recent-post */
-.recent-post ul li {
+.recent-post ul li,
+.upcoming,
+.politics {
     border-bottom: 1px solid #e6e6e6;
     padding: 0 0 15px 0;
 }
@@ -426,4 +435,8 @@ footer ul li {
     text-decoration: none;
     line-height: 20px;
 }
-
+.events p {
+    color: #444b5b;
+    font-size: 12px;
+    font-weight: bold;
+}
