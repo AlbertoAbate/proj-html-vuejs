@@ -312,8 +312,43 @@
                 </li>
             </ul>
         </div>
-        <div>
-
+        <div class="poker-info flex">
+            <div class="poker-info-left">
+                <div class="courses mb">
+                    <h4 class="tu">Courses</h4>
+                    <ul>
+                        <li v-For="(course, i) in coursesList">
+                            <a href="#">{{ course.item }}</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="admissions">
+                    <h4 class="tu">Admissions</h4>
+                    <ul>
+                        <li v-For="(admission, i) in admissionsList">
+                            <a href="#">{{ admission.item }}</a>
+                        </li>
+                    </ul>
+                </div>  
+            </div>
+            <div class="poker-info-right ml">
+                <div class="resources mb">
+                    <h4 class="tu">Resources</h4>
+                    <ul>
+                        <li v-For="(resource, i) in resourcesList">
+                            <a href="#">{{ resource.item }}</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quicklinks">
+                    <h4 class="tu">Quicklinks</h4>
+                    <ul>
+                        <li v-For="(quicklink, i) in quicklinksList">
+                            <a href="#">{{ quicklink.item }}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div>
 
