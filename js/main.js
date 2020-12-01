@@ -10,7 +10,8 @@ var app = new Vue({
             item: 'About'
           },
           {
-            item: 'Courses'
+            item: 'Courses',
+            new: true
           },
           {
             item: 'Events'
@@ -22,7 +23,8 @@ var app = new Vue({
             item: 'News'
           },
           {
-            item: 'Admissions'
+            item: 'Admissions',
+            adApply: true
           },
       ],
 

@@ -52,6 +52,7 @@
                     <li v-for="(social, i) in socialList">
                         <a class="white" href="#">
                             <i :class="`fab ${social.icon} `"></i>
+                            
                         </a>
                     </li>
                     
@@ -70,6 +71,8 @@
                 <ul class="flex">
                     <li v-for='(link, i) in linkList'>
                         <a href="">{{link.item}}</a>
+                        <span class="new white tu" v-if="link.new ? 'new' : '' ">new</span>
+                        <span class="adApply white tu" v-if="link.adApply ? 'adApply' : '' ">apply</span>
                     </li>
                 </ul>
             </div>
@@ -258,7 +261,63 @@
 
     <!-- footer -->
     <footer>
+        <div class="info">
+            <h4 class="tu">Avada University</h4>
+            <ul>
+                <li class="flex">
+                    <i class="fas fa-house-damage"></i>
+                    <div class="address flex mll">
+                        <span>Residential Location</span>
+                        <span>9521 Broadsbarry Avenue</span>
+                        <span>Paddington RC7 9ZA</span>
+                    </div>
+                </li>
+                <li>
+                    <i class="fas fa-phone"></i>
+                    <span class="mll">1.800.458.186</span>
+                </li>
+                <li>
+                    <i class="far fa-envelope"></i>
+                    <span class="mll">info@your-domain.com</span>
+                </li>
+                <li>
+                    <i class="far fa-clock"></i>
+                    <span class="mll">Monday - Friday 8.00 AM - 10.00 PM</span>
+                </li>
+            </ul>
+        </div>
+        <div class="recent-post">
+            <h4 class="tu">Recent Post</h4>
+            <ul>
+                <li class="flex">
+                    <i class="fas fa-angle-right"></i>
+                    <div class="mll">
+                        <p class="mb">What do succesful grads think you should study?</p>
+                        <span class="mb">March 16, 2016</span>
+                    </div>
+                </li>
+                <li class="flex">
+                    <i class="fas fa-angle-right"></i>
+                    <div class="mll">
+                        <p class="mb">Former student discusses success in the fashion industry?</p>
+                        <span class="mb">March 15, 2016</span>
+                    </div>
+                </li>
+                <li class="flex">
+                    <i class="fas fa-angle-right"></i>
+                    <div class="mll">
+                        <p class="mb">How do you best prepare for university?</p>
+                        <span class="mb">March 15, 2016</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div>
 
+        </div>
+        <div>
+
+        </div>
     </footer>
   </div> <!-- chiusura app -->
     
