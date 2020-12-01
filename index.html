@@ -27,13 +27,35 @@
                             24hrs
                         </div>
                     </li>
+                    <li class="ml">
+                        <i class="fas fa-envelope"></i>
+                    </li>
+                    <li>
+                        Contact Us
+                    </li>
+                    <li>
+                        <i class="fas fa-graduation-cap"></i>
+                    </li>
+                    <li>
+                        Alumn
+                    </li>
+                    <li>
+                        <i class="fas fa-school"></i>
+                    </li>
+                    <li>
+                        Campus
+                    </li>
                 </ul>
             </div>
             <div class="social">
-                <ul>
-                    <li>
-                        <i class="fab fa-facebook-f"></i>
+                <ul class="flex">
+                    <li v-for="(social, i) in socialList">
+                        <a class="white" href="#">
+                            <i :class="`fab ${social.icon} `"></i>
+                        </a>
                     </li>
+                    
+
                 </ul>
             </div>
         </div>
@@ -45,9 +67,9 @@
                 <img src="./img/university_logo.png" alt="">
             </div>
             <div class="link">
-                <ul>
-                    <li>
-                        <a href="">Home</a>
+                <ul class="flex">
+                    <li v-for='(link, i) in linkList'>
+                        <a href="">{{link.item}}</a>
                     </li>
                 </ul>
             </div>

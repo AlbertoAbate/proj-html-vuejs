@@ -24,6 +24,9 @@ body {
 .mr {
     margin-right: 10px;
 }
+.ml {
+    margin-left: 40px;
+}
 .tu {
     text-transform: uppercase;
 }
@@ -54,6 +57,7 @@ header {
     list-style-type: none;
     margin-right: 12px;
     padding: 12px 0;
+    font-size: 12px;
 }
 .contact .ore {
     padding: 2px 8px;   
@@ -61,7 +65,7 @@ header {
     background-color: black;
     opacity: 0.2;
     position: absolute;
-    top: 10px;
+    top: 12px;
     border-radius: 3px;
 }
 /* barra-navigazione */
@@ -192,7 +196,7 @@ header {
 .third-section::before {
     content: "";
     position: absolute;
-    bottom: -248%;
+    top: 319%;
     right: 0%;
     width: 50%;
     height: 125px;
@@ -332,7 +336,7 @@ header {
 /* sixth section */
 .sixth-section {
     background-color: #2e3341;
-    padding: 60px 0;
+    padding: 60px 0 90px 0;
     text-align: center;
     line-height: 30px;
 }
