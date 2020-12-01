@@ -329,3 +329,34 @@ header {
    font-size: 12px;
    margin: 20px;
 }
+/* sixth section */
+.sixth-section {
+    background-color: #2e3341;
+    padding: 60px 0;
+    text-align: center;
+    line-height: 30px;
+}
+.sixth-section h4 {
+    color: #444b5b;
+    font-size: 12px;
+}
+.sixth-section .addresses {
+    justify-content: center;
+}
+.name,
+.email,
+.telephone {
+    padding: 2px 160px 2px 8px;
+    margin-right: 10px;
+    font-size: 12px;
+    background-color: #444b5b;
+}
+.apply {
+    background-color: #ffab0b;
+    border-color: #ffab0b;
+    padding: 4px 40px;
+}
+.addresses {
+    margin-top: 40px;
+}
+
