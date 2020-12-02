@@ -49,6 +49,9 @@ body {
 .dark {
     color:  #130f09;
 }
+.fw{
+    font-weight: bold;
+}
 
 .container-small {
     width: 1170px;
@@ -103,7 +106,10 @@ header {
     list-style-type: none;
     font-size: 14px;
     margin-right: 30px;
-
+    font-weight: bold;
+}
+.link ul li:last-child{
+    margin-right: 0;
 }
 .link ul li a {
     text-decoration: none;
@@ -123,7 +129,7 @@ header {
     background-image: url(../img/home_main_slider_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: -220px;
+    background-position-y: -200px;
 }
 .first-section h1 {
     font-size: 50px;
@@ -183,8 +189,8 @@ header {
 .second-section-bottom:before {
     content: '';
     position: absolute;
-    width: 180px;
-    height: 2px;
+    width: 160px;
+    height: 1px;
     background-color: #ffab0b;
     left: 400px;
     top: -70px;
@@ -205,26 +211,28 @@ header {
 .vimeo {
     margin-left: 50px;
 }
-.second-section::after{
+.pseudo-elemento::after{
     content: '';
-    position: absolute;
-    top: 708px;
-    width: 60%;
-    height: 75px;
-    background-color: #fff;
-    left: -97px;
-    transform: rotate(6deg);
+position: absolute;
+bottom: 446px;
+width: 51%;
+height: 78px;
+background-color: #fff;
+transform: rotate(6deg);
 }
 /* third-section */
-.third-section::before {
+.pseudo-elemento::before {
     content: "";
-    position: absolute;
-    top: 319%;
-    right: 0%;
-    width: 50%;
-    height: 125px;
-    background-color: #fff;
-    transform: rotate(174deg);
+position: absolute;
+bottom: 445px;
+right: -1px;
+width: 50%;
+height: 125px;
+background-color: #fff;
+transform: rotate(174deg);
+}
+.pseudo-elemento {
+    position: relative;
 }
 .third-section {
     line-height: 30px;
@@ -313,9 +321,9 @@ header {
     content: '';
     position: absolute;
     width: 180px;
-    height: 2px;
+    height: 1px;
     background-color: #ffab0b;
-    left: 680px;
+    left: 670px;
     top: 280px;
 }
 .first-block,
