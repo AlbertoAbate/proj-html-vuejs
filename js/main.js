@@ -92,15 +92,29 @@ var app = new Vue({
         },
       ],
       quicklinksList : [
-          {
-              item : 'University Library'
-          },
-          {
+        {
+            item : 'University Library'
+        },
+        {
             item : 'Campus Services'
-          },
-          {
+        },
+        {
             item : 'Careers'
-          },
+        },
+      ],
+      webList : [
+        {
+           icon: 'fa-facebook-f',
+        },
+        {
+           icon: 'fa-twitter',
+        },
+        {
+           icon: 'fa-youtube',
+        },
+        {
+           icon: 'fa-instagram',
+        }
       ],
 
 

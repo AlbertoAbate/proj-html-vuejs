@@ -53,12 +53,9 @@
                 <ul class="flex">
                     <li v-for="(social, i) in socialList">
                         <a class="white" href="#">
-                            <i :class="`fab ${social.icon} `"></i>
-                            
+                            <i :class="`fab ${social.icon} `"></i>   
                         </a>
                     </li>
-                    
-
                 </ul>
             </div>
         </div>
@@ -375,6 +372,41 @@
             <p class="mt">View more...</p>
         </div>
     </footer>
+    <div class="footer-bottom">
+        <div class="rights">
+            <ul class="flex">
+                <li>
+                    <i class="far fa-copyright"></i>
+                    <span>Theme Fusion</span> 
+                </li>
+                <li>|</li>
+                <li>
+                    <span>All Right Reserved</span>
+                </li>
+                <li>|</li>
+                <li>
+                    <span>Powered by Wordpress</span>
+                </li>
+                <li>|</li>
+                <li>
+                    <span>Support@theme-fusion.com</span>
+                </li>
+                <li>|</li>
+                <li>
+                    <span>1.800.555.6789</span>
+                </li>
+            </ul>
+        </div>
+        <div class="web">
+            <ul class="flex">
+                <li v-for="(web, i) in webList">
+                    <a href="#">
+                        <i :class="`fab ${web.icon} `"></i>   
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
   </div> <!-- chiusura app -->
     
 
