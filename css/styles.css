@@ -52,7 +52,6 @@ body {
 .fw{
     font-weight: bold;
 }
-
 .container-small {
     width: 1170px;
     margin: 0 auto;
@@ -198,9 +197,6 @@ header {
 .why {
     text-align: left;
 }
-.why h3 {
-    text-transform: uppercase;
-}
 .why p {
     max-width: 100%;
     margin-top: 20px;
@@ -213,23 +209,23 @@ header {
 }
 .pseudo-elemento::after{
     content: '';
-position: absolute;
-bottom: 446px;
-width: 51%;
-height: 78px;
-background-color: #fff;
-transform: rotate(6deg);
+    position: absolute;
+    bottom: 446px;
+    width: 51%;
+    height: 78px;
+    background-color: #fff;
+    transform: rotate(6deg);
 }
 /* third-section */
 .pseudo-elemento::before {
     content: "";
-position: absolute;
-bottom: 445px;
-right: -1px;
-width: 50%;
-height: 125px;
-background-color: #fff;
-transform: rotate(174deg);
+    position: absolute;
+    bottom: 445px;
+    right: -1px;
+    width: 50%;
+    height: 125px;
+    background-color: #fff;
+    transform: rotate(174deg);
 }
 .pseudo-elemento {
     position: relative;
