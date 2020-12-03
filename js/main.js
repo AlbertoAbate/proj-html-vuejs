@@ -117,7 +117,5 @@ var app = new Vue({
         }
       ],
 
-
-
     } //end Data
    }) // end Vue 
